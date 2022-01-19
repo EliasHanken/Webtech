@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>DOM hierarchy example</title>
+        
     </head>
     <body>
         <h1>Black Goose Bistro</h1>
@@ -10,5 +11,18 @@
         <p>The Black Goose Bistro offers casual lunch and dinner fare in a
             relaxed atmosphere. The menu changes regularly to highlight the
             freshest local ingredients.</p>
+        <ul>
+            <li>test</li>
+            <li>test</li>
+            <li> a < b </li>
+            <li id="pi"></li>
+        </ul>
     </body>
+    <script>
+        window.onload = main;
+
+        function main(){
+            document.getElementById("pi").innerHTML = "pi = " + Math.round(Math.PI*1000000)/1000000;
+        }
+    </script>
 </html>
