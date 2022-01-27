@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing response of different sizes</title>
+</head>
+<body>
+<center>
+    <h1>Welcome</h1>
+    <picture>
+        <source media="(max-width: 640px)" srcset="resources/redpanda-cropped.jpg 750w"
+                sizes="100vw">
+        <source sizes="80vw"
+                type="image/jpg" srcset="resources/redpanda-1200.jpg 1200w, resources/redpanda-2400.jpg 2400w">
+        <img src="resources/redpanda-1200.jpg" alt="A test image">
+    </picture>
+</center>
+</body>
+</html>

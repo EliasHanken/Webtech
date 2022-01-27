@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Ex 3.2 - Image alternatives</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<picture>
+    <source media="(max-width: 640px)" srcset="images/panda-cropped.jpg 750w" 
+        sizes="100vw">
+    <source type="image/webp" sizes="80vw"
+        srcset="images/redpanda-2400.webp 2400w, images/redpanda-1200.webp 1200w">
+    <source type="image/jpg" sizes="80vw"
+        srcset="images/redpanda-2400.jpg 2400w, images/redpanda-1200.jpg 1200w">
+    <img src="images/redpanda-1200.jpg" alt="A red panda">
+</picture>
+
+<h1>Pictures are nice!</h1>
+
+</body>
+</html>
