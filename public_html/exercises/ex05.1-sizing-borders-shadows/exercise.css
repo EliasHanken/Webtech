@@ -1,0 +1,45 @@
+/* Put your styles here according to exercise description */
+body{
+    font-size: 62.5%;
+    margin: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
+
+.card{
+    width: 15rem;
+    height: 25rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    border: 0.1rem darkgray dashed;
+}
+
+.card-description{
+    margin: 1rem 0.5rem;
+}
+
+.card{
+    overflow: hidden;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 15px;
+    transition: box-shadow 0.2s linear, padding-bottom 0.2s linear;
+    -webkit-transition: box-shadow 0.2s linear, padding-bottom 0.2s linear;
+}
+
+.card:hover{
+    padding-bottom: 1rem;
+    box-shadow: 0 0 1rem 1rem rgb(128, 128, 128,30%);
+}
